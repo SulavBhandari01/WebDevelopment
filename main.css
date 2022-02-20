@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    background-color: #9AD0EC;
+    padding: 20px;
+    height: 12vh;
+    display: flex;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    
+}
+.nav_unorderlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 380px;
+
+}
+.nav_unorderlist li{
+    color:black;
+    list-style-type: none;
+    font-size: 22px;
+    font-family:consolas;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.homepage{
+    padding: 80px;
+    background-image: url("./image/abstract.jpg");
+    background-size:cover ;
+height: 670px;
+}
+.hey{
+    color: blue;
+    font-family: cursive;
+    font-size: 100px;
+    margin-top: 200px;
+}
+.name{
+    color: black;
+    font-family:consolas;
+    font-size: 50px;
+}
+.syllabus{
+    color: black;
+    font-family: consolas;
+    font-size: 50px;
+}
+.name span{
+    color:black ;
+}
