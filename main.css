@@ -23,12 +23,18 @@
 
 }
 .nav_unorderlist li{
-    color:black;
     list-style-type: none;
     font-size: 22px;
     font-family:consolas;
-    margin-left: 50px;
+    margin-left: 40px;
     cursor: pointer;
+}
+.nav_unorderlist li a{
+    color:black;
+    text-decoration: none;
+}
+.nav_unorderlist li a.active{
+    color: indianred;
 }
 
 .homepage{
@@ -56,3 +62,4 @@ height: 670px;
 .name span{
     color:black ;
 }
+
