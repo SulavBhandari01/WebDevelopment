@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,9 +12,6 @@
     display: flex;
     background-color: #EEEDDE;
 }
-.logo{
-    height: 30px;
-    width: 30px;
     
 }
 .nav_unorderlist{
