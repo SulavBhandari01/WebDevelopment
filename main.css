@@ -10,15 +10,16 @@
     padding: 20px;
     height: 10vh;
     display: flex;
-    background-color: #EEEDDE;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+
 }
-    
-}
+
 .nav_unorderlist{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 780px;
 }
 .nav_unorderlist li{
     list-style-type: none;
@@ -27,6 +28,7 @@
     /*font-family:Arial, Helvetica, sans-serif;*/
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
+    display: flex;
 
     margin-left: 40px;
     cursor: pointer;
