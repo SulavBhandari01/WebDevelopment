@@ -124,33 +124,46 @@ background-size: cover;
     height:  90vh;
     display: grid;
     grid-template-columns:auto auto ;
-    grid-template-rows: 70px 500px 70px ;
+    grid-template-rows: 70px 500px auto ;
     }
     .head{
         grid-column: 1/-1;
-        font-family: cursive;
+        font-family:'Poppins', sans-serif;
         text-align: center;
         padding: 10px;
-        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-top: 0.5px solid dimgray;
+        border-bottom: 0.5px solid dimgray;
     }
 .grid_image{
-    background-color: blueviolet;
     grid-column: 1/span 1;
 
 }
 .about_me{
-    background-color: steelblue;
-    
+    border-left: 1px solid dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about_me p{
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-     font-family: 'Poppins', sans-serif;
-
+    font-size: 23px;
+    /*text-align: center;*/
+    font-family: 'Poppins', sans-serif;
+}
+.about_me_name{
+    color: indianred;
+    font-size: 28px;
 }
 .affilation{
-    background-color: yellow;
     grid-column: 1/-1;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid dimgray;
