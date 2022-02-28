@@ -167,3 +167,65 @@ background-size: cover;
     justify-content: center;
     align-items: center;
     border-top: 1px solid dimgray;
+}
+
+    /*contact page*/
+    .contact_main{
+        width: 100%;
+        height: 76.9vh;
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: 35% 65%;
+
+
+    }
+    .contact_details{
+        padding: 20px;
+        display: flex;
+        /*align-items: center;*/
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .contact_details_detail{
+        font-size: 18px;
+        font-weight: bold;
+        font-family:'Poppins', sans-serif;        
+    }
+    .contact_details_heading{
+        font-size: 50px;
+        font-family:'Poppins', sans-serif; 
+
+    }
+    .contact_details_subheading{
+        font-size: 18px;
+        font-family:'Poppins', sans-serif;
+    }
+    .contact_form{
+        font-family:'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+    }
+    .contact_form_form{
+        background-color: black;
+        width: 100%;
+        padding: 20px;
+        border-radius: 2px;
+    }
+    .contact_form_form input{
+        background: transparent;
+        width: 100%;
+        height: 60px;
+        padding: 5px;
+        border: 0.5px solid gray;
+        border-radius: 2px;
+        color: white;
+    }
+    #contact_submit{
+        width: 20%;
+        background-color: indianred;
+    }
+
