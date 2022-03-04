@@ -282,6 +282,10 @@
      .sitereport_paragraph{
      padding:30px;   
      }
+<<<<<<< HEAD
+=======
+     
+>>>>>>> 163c75f5ff3f26567108e2f40dff3581e687e8cd
      .sitereport_report{
         font-size: 20px;
         margin-top: 10px;
@@ -309,6 +313,7 @@
       .sitereport_homepageimage img{
         width: 50%;
         height: 500px;
+        padding: 30px;
       }
       .sitereport_homepageimage{
         display: flex;
@@ -322,6 +327,13 @@
       .reference_heading{
         text-align: center;
       }
+      .reference_main{
+        padding: 30px;
+      }
+      .reference_main p{
+        margin-top: 10px;
+      }
+      
 
 
 /*media query*/
