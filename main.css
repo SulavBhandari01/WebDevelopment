@@ -282,10 +282,7 @@
      .sitereport_paragraph{
      padding:30px;   
      }
-<<<<<<< HEAD
-=======
-     
->>>>>>> 163c75f5ff3f26567108e2f40dff3581e687e8cd
+
      .sitereport_report{
         font-size: 20px;
         margin-top: 10px;
@@ -323,6 +320,20 @@
       }
       .sitereport_homepageimage_heading{
         text-align: center; 
+      }
+
+      .html_validation{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+      }
+      .html_validation img{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
       }
       .reference_heading{
         text-align: center;
@@ -470,7 +481,7 @@
 }
     #check:checked~ .nav_unorderlist{
         top: 80px;
-        left: 100;
+        left: 65%;
     }
 }
 
@@ -556,7 +567,31 @@
     font-size: 15px;
 }
 
-
+.nav_unorderlist{
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        top: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    .nav_unorderlist li{
+        display: block;
+        margin: 20px 0;
+        line-height: 10px;
+        color: white;
+    }
+    .nav_unorderlist li a{
+    color:white;
+    text-decoration: none;
+}
+    #check:checked~ .nav_unorderlist{
+        top: 80px;
+        left: 0%;
+    }
 
 
 }
