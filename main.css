@@ -269,3 +269,54 @@ background-size: cover;
 
 
      }
+
+     /*Site Report*/
+
+     .sitereport_paragraph{
+     padding:30px;   
+     }
+     
+
+
+
+     .sitereport_report{
+        font-size: 20px;
+        margin-top: 10px;
+        font-family:'Poppins', sans-serif;
+      
+     }
+     .sitereport_heading{
+         text-align: center;
+         text-transform: uppercase;
+         
+     }
+     .sitereport_gitimage{
+        display: flex;
+        padding: 30px;
+     }
+     
+     .sitereport_gitimage img{
+        width:50%;
+        height: 500px;
+
+     }
+     .sitereport_gitimage_heading{
+        text-align: center;
+     }
+      .sitereport_homepageimage img{
+        width: 50%;
+        height: 500px;
+      }
+      .sitereport_homepageimage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .sitereport_homepageimage_heading{
+        text-align: center;
+      }
+      .reference_heading{
+        text-align: center;
+      }
+
