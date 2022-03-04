@@ -39,25 +39,41 @@
 }
 
 
+/*hamburger*/
+.checkbtn{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+
+}
+
+
 /*css for index.html*/
 
 .main-homepage{
     height: 90vh;
     display: flex;
-
+    width: 100%;
 }
 
 .homepage{
     padding: 80px;
     width: 50%;
+    height: 90vh;
     background-color: #EEEDDE;
 }
 .homepage-image{
     width: 50%;
-    /*background-color: skyblue;*/
-background-image: url(./image/myphoto.jpg);
-background-size: cover;
-
+    height: 75vh;
+    background-size: cover;
+}
+.homepage-image img{
+    width: 100%;
+    height: 75vh;
+    height: 90vh;
 }
 .hey{
     color: #0F0E0E;
@@ -80,7 +96,6 @@ background-size: cover;
 }
 .contact-button{
     width: 120px;
-    /*background-color: indianred;*/
     padding: 10px;
     border: 2px solid indianred;
     border-radius: 2px;
@@ -171,13 +186,10 @@ background-size: cover;
         display: grid;
         grid-template-rows: 500px;
         grid-template-columns: 35% 65%;
-
-
     }
     .contact_details{
         padding: 20px;
         display: flex;
-        /*align-items: center;*/
         justify-content: center;
         flex-direction: column;
         padding: 50px;
@@ -270,10 +282,6 @@ background-size: cover;
      .sitereport_paragraph{
      padding:30px;   
      }
-     
-
-
-
      .sitereport_report{
         font-size: 20px;
         margin-top: 10px;
@@ -309,9 +317,234 @@ background-size: cover;
         flex-wrap: wrap;
       }
       .sitereport_homepageimage_heading{
-        text-align: center;
+        text-align: center; 
       }
       .reference_heading{
         text-align: center;
       }
 
+
+/*media query*/
+
+@media screen and (max-width: 768px){
+
+    /*homepage*/
+
+
+    .main-homepage{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage{
+        width: 100%;
+        height: 50vh;
+    }
+    .homepage-image{
+        width: 100%;
+        height: 50vh;
+    }
+    .homepage-image img{
+        height: 50vh;
+    }
+    .hey{
+    font-size: 20px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .syllabus{
+        font-size: 15px;
+    }
+    .name span{
+        color:indianred ;
+    }
+    .contact-button{
+        width: 120px;
+    }
+
+
+    /*blog*/
+
+    .blog_main{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+     }
+
+    .blog_research{
+        font-size: 16px;
+     }
+     .blog_development{
+        font-size: 16px;
+
+     }
+     .blog_result{
+        font-size: 16px;
+     }
+
+     .blog_research{
+        border-right: 0px;
+
+     }
+     .blog_development{
+        border-right: 0px;
+     }
+     .blog_result{
+        border-right: 0px;
+     }
+
+
+     /*site report*/
+
+     .sitereport_heading{
+         text-align: center;
+         text-transform: uppercase;
+         
+     }
+     .sitereport_gitimage{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+     }
+     
+     .sitereport_gitimage img{
+        width:100%;
+        height: 500px;
+
+     }
+     .sitereport_gitimage_heading{
+        text-align: center;
+     }
+      .sitereport_homepageimage img{
+        width: 100%;
+        height: 500px;
+      }
+      .sitereport_homepageimage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+
+       /*hamburger*/
+    .checkbtn{
+        display:block;
+        color: black;
+    }
+    .nav_unorderlist{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    .nav_unorderlist li{
+        display: block;
+        margin: 20px 0;
+        line-height: 10px;
+        color: white;
+    }
+    .nav_unorderlist li a{
+    color:white;
+    text-decoration: none;
+}
+    #check:checked~ .nav_unorderlist{
+        top: 80px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:  400px){
+
+    /*homepage*/
+
+    .main-homepage{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage{
+        width: 100%;
+        height: auto;
+    }
+    .homepage-image{
+        width: 100%;
+        height: auto;
+    }
+    .homepage-image img{
+        height: auto;
+    }
+    .hey{
+    font-size: 20px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .syllabus{
+        font-size: 15px;
+    }
+    .name span{
+        color:indianred ;
+    }
+    .contact-button{
+        width: 120px;
+    }
+
+
+    /*Contact*/
+
+    .contact_main{
+        width: 100%;
+        height: 76.9vh;
+        display: flex;
+    }
+
+      .contact_details{
+        display: none;
+    }
+
+    .contact_form{
+        width: 100%;
+    }
+    
+    #contact_submit{
+        width: 100%;
+    }
+
+
+    /*portfolio*/
+.portfolio{
+    width: 100%;
+    height:  90vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .about_me{
+        padding: 10px;
+    }
+.about_me p{
+    font-size: 18px;
+}
+.about_me_name{
+    color: indianred;
+    font-size: 23px;
+}
+.affilation{
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+
+
+}
